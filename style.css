@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'main aside'
+    'footer footer'
+     ;
+
+}
+#item1 {
+    grid-area: header;
+    background-color: red;
+    font-size: 4em;
+}
+#item2 {
+    grid-area: main;
+    background-color: blue;
+    font-size: 4em;
+}
+#item3 {
+    grid-area: main aside;
+    background-color: yellow;
+    font-size: 4em;
+}
+#item4 {
+    grid-area: footer;
+    background-color: pink;
+    font-size: 4em;
+}
